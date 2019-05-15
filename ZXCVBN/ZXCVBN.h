@@ -6,7 +6,11 @@
 //  Copyright (c) 2015 Gabriel Handford. All rights reserved.
 //
 
+#if TARGET_OS_IPHONE
+#import <UIKit/UIKit.h>
+#else // macOS
 #import <Cocoa/Cocoa.h>
+#endif
 
 //! Project version number for ZXCVBN.
 FOUNDATION_EXPORT double ZXCVBNVersionNumber;

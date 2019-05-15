@@ -16,7 +16,7 @@
     NSMutableArray *result = [NSMutableArray array];
     
     NSString *currentRepeatingChar;
-    int begin, repeatCount = 0;
+    int begin = 0, repeatCount = 0;
     for (int i = 0; i < password.length; i++) {
         NSString *ch = [password substringWithRange:NSMakeRange(i, 1)];
         if ([currentRepeatingChar isEqualToString:ch]) {
